@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Definindo a codificação de caracteres para UTF-8 (suporte para caracteres especiais) -->
+    <meta charset="utf-8">
+    <!-- Tornando o site responsivo para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Dona Branca</title>
+    
+    <!-- Importando o CSS do Bootstrap para estilizar a página -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #4e0101;">
+    <!-- Barra de navegação (Navbar) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Nome do restaurante, com link para a página inicial -->
+            <a class="navbar-brand" href="#">Dona Branca</a>
+            <!-- Botão de alternância da navbar (para dispositivos móveis) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Ícone de alternância -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu da navbar, com links para as páginas Home, Cardápio e Contato -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- Link para a página "Home" -->
+                        <a class="nav-link active" aria-current="page" href="iindex.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link para a página "Cardápio" -->
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link para a página "Contato" -->
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <!-- Formulário de busca (barra de pesquisa) -->
+                <form class="d-flex" role="search">
+                    <!-- Campo de pesquisa -->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- Botão de busca -->
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção do Cardápio -->
+    <div class="container text-center" style="padding: 10px;">
+        <div class="row">
+            <!-- Primeiro item do cardápio (Frango a Parmegiana) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://www.estadao.com.br/resizer/v2/ZEIMFVFYV5GABH6YH52MAFRN5A.jpg?quality=80&auth=7ba1eec02078d7d35e0d18afc50a6e3de19c9fbf671835fbda5edbe37998a24f&width=720&height=503&focal=406,339" 
+                         class="card-img-top" style=" width: 100%; height: 12rem;">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Frango a Parmegiana</h3>
+                        <!-- Descrição do prato (quantas pessoas serve) -->
+                        <p class="card-text">Serve 2 pessoas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo item do cardápio (Risoto de Camarão) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://s2-receitas.glbimg.com/KWpGf7SHzNbPSab_Z3fmhDOGCmo=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/A/5/RQBWn4SlyzO0JWxYflwg/capa-materia-gshow-102-.png" 
+                         style=" width: 100%; height: 12rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Risoto de Camarão</h3>
+                        <!-- Descrição do prato -->
+                        <p class="card-text">Serve 1 pessoa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro item do cardápio (Porção de Fritas) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://thepetitpizzaria.com.br/saofrancisco/wp-content/uploads/2023/09/batata-frita-porcao.jpg" 
+                         class="card-img-top" style=" width: 100%; height: 12rem;">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Porção de Fritas</h3>
+                        <!-- Descrição do prato -->
+                        <p class="card-text">Serve até 4 pessoas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda linha de itens do cardápio -->
+        <br>
+        <div class="row">
+            <!-- Quarto item do cardápio (Massas) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvZJKh8XlAfnl3rssE_2a7V_SUt3Y-O2eZw&s" 
+                         class="card-img-top" style=" width: 100%; height: 12rem;">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Massas</h3>
+                        <!-- Descrição do prato -->
+                        <p class="card-text">Serve até 3 pessoas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quinto item do cardápio (Banana Flambada) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2184-f85c49685371b59b253c9aa21d420b6a.jpg" 
+                         style=" width: 100%; height: 12rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Banana Flambada</h3>
+                        <!-- Descrição do prato -->
+                        <p class="card-text">Serve 1 pessoa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sexto item do cardápio (Petit Gateau) -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <!-- Imagem do prato -->
+                    <img src="https://receitatodahora.com.br/wp-content/uploads/2022/02/petit-gateau-scaled.jpg" 
+                         class="card-img-top" style=" width: 100%; height: 12rem;">
+                    <div class="card-body">
+                        <!-- Nome do prato -->
+                        <h3>Petit Gateau</h3>
+                        <!-- Descrição do prato -->
+                        <p class="card-text">Serve 1 pessoa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusão do JavaScript do Bootstrap para interatividade (ex: navbar-toggler) -->
+    <script src

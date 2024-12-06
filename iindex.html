@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Declaração do tipo de documento como HTML5 -->
+    <meta charset="utf-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ajusta o layout para dispositivos móveis -->
+    <title>Dona Branca</title> <!-- Título da página -->
+
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar responsiva com temas escuros -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Nome da marca/empresa -->
+            <a class="navbar-brand" href="#">Dona Branca</a>
+
+            <!-- Botão para dispositivos menores que expande/colapsa o menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu principal e barra de busca -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Links de navegação -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="iindex.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- Barra de pesquisa -->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------------------->
+    <!-- Imagem principal responsiva -->
+    <img src="imagens/Image.jfif" class="img-fluid" style="width: 100%; height: 30rem;">
+
+    <!-- Container principal para organizar os elementos usando o sistema de grid do Bootstrap -->
+<div class="container" style="padding: 10px;">
+        <!-- Seção com horários de funcionamento -->
+        <!-- Seção para horários, que pode ser organizada em colunas se necessário -->
+<section id="horarios" class="mb-5">
+            <h2>Horários de Funcionamento</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Segunda a Sexta</td>
+                        <td>08:00 - 22:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Sábado</td>
+                        <td>10:00 - 00:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Domingo</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção de contato com formulário -->
+        <section id="contato" class="mb-5">
+            <h2>Contato</h2>
+            <!-- Formulário estruturado com o sistema de grid (class row e col-*) para alinhamento responsivo -->
+<form class="row g-3 needs-validation" novalidate>
+                <!-- Campo de Nome -->
+                <!-- Cada campo do formulário ocupa 4 colunas em telas médias ou maiores -->
+<div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Seu nome" required>
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                </div>
+                <!-- Campo de E-mail -->
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="Seu e-mail" required>
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                </div>
+                <!-- Campo de Telefone -->
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Telefone (opcional)</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Seu telefone">
+                    <div class="valid-feedback">
+                        Tudo certo!
+                    </div>
+                </div>
+                <!-- Campo de Mensagem -->
+                <!-- Campo de mensagem ocupa todas as 12 colunas em telas médias ou maiores -->
+<div class="col-md-12">
+                    <label for="validationCustom04" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="validationCustom04" rows="4" placeholder="Digite sua mensagem"
+                        required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor, preencha este campo.
+                    </div>
+                </div>
+                <!-- Botão de envio -->
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Link para o JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
